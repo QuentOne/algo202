@@ -25,12 +25,12 @@ jobs:
 
       - name: Run strategy 1
         run: |
-          python src/strategies/strat1.py
+          python src/strategy/strat1.py
       
       - name: Run strategy 2
         run: |
-          python src/strategies/strat2.py
+          python src/strategy/strat2.py
 
       - name: Run strategy 3
         run: |
-          python src/strategies/strat3.py
+          python src/strategy/strat3.py
