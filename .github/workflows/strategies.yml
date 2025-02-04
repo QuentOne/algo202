@@ -1,0 +1,36 @@
+name: Run Strategies
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-run-strategies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run strategy 1
+        run: |
+          python src/strategies/strat1.py
+      
+      - name: Run strategy 2
+        run: |
+          python src/strategies/strat2.py
+
+      - name: Run strategy 3
+        run: |
+          python src/strategies/strat3.py
