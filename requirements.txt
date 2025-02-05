@@ -1,6 +1,8 @@
-alpaca-trade-api
 backtrader
-pandas
-numpy
+alpaca-trade-api
 pytest
 matplotlib
+yfinance
+pyarrow
+pandas
+numpy

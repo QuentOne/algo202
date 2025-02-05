@@ -16,21 +16,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.9"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
           pip3 install --upgrade pip
           pip3 install -r requirements.txt
-
-      - name: Run strategy 1
+      - name: Run 1
         run: |
-          python src/strategy/strat1.py
-      
-      - name: Run strategy 2
-        run: |
-          python src/strategy/strat2.py
-
-      - name: Run strategy 3
-        run: |
-          python src/strategy/strat3.py
+          python src/run.py
