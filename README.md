@@ -2,4 +2,7 @@
 
 Created on 04/02/25
 
-Side Project
+Side Project :D
+
+
+python src/backtesting/run.py
