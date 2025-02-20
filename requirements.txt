@@ -1,8 +1,0 @@
-backtrader
-alpaca-trade-api
-pytest
-matplotlib
-yfinance
-pyarrow
-pandas
-numpy
